@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+     android:background="#e3e3e3">
+
+    <RelativeLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/feedback_strip1" >
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+           
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+             android:textColor="#0097dc"
+            android:text="NAME"
+            android:textSize="13dp" />
+<RelativeLayout
+        android:id="@+id/textView_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/textView_name"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:id="@+id/arrange_childname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:inputType="textMultiLine"
+            android:layout_centerVertical="true"
+            android:textColor="#0097dc"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_margin="10dp"
+        android:background="@drawable/feedback_strip1" >
+
+        <TextView
+            android:id="@+id/textViewDob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+             android:textColor="#0097dc"
+            android:text="DATE OF BIRTH"
+            android:textSize="13dp" />
+<RelativeLayout
+        android:id="@+id/textViewDob1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/textViewDob"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:id="@+id/textchild_dob_arrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:inputType="textMultiLine"
+              android:paddingRight="10dp"
+            android:textColor="#0097dc"
+            android:textSize="13dp" />
+
+    </RelativeLayout> </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Allergies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob"
+        android:layout_margin="10dp"
+        android:background="@drawable/feedback_strip1" >
+
+        <TextView
+            android:id="@+id/textViewallergies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+             android:textColor="#0097dc"
+            android:text="ALLERGIES"
+            android:textSize="13dp" />
+<RelativeLayout
+        android:id="@+id/Allergies1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/textViewallergies"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:id="@+id/text_child_allergies_arrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+           android:inputType="textMultiLine"
+             android:paddingRight="10dp"
+            android:textColor="#0097dc"
+            android:textSize="13dp" />
+ </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- <RelativeLayout
+        android:id="@+id/youthclub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/school"
+        android:layout_margin="10dp"
+        android:background="@drawable/feedback_strip1" >
+
+        <TextView
+            android:id="@+id/textViewyouthclub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="YOUTHCLUB"
+             android:textColor="#0097dc"
+            android:textSize="13dp" />
+<RelativeLayout
+        android:id="@+id/textViewyouthclub1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/textViewyouthclub"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:id="@+id/text_child_youth_arrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#0097dc"
+            android:paddingRight="10dp"
+            android:textSize="13dp" />
+
+    </RelativeLayout></RelativeLayout> -->
+
+</RelativeLayout>

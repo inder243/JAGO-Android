@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+        android:id="@+id/headingLL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="#f3f3f3"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:textColor="@android:color/black"
+            android:text="" >
+             </TextView>
+            <!-- <View
+     android:layout_width="match_parent"
+     android:layout_height="2dp"
+     android:background="#0097dc" /> -->
+       
+    </LinearLayout>
+    
+    
+    
+    <ListView
+        android:id="@+id/booksLV"
+         android:cacheColorHint="#00000000"
+            android:dividerHeight="1px"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+         <LinearLayout
+            android:id="@+id/sideIndex"
+            android:layout_width="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+        </LinearLayout>
+</RelativeLayout>

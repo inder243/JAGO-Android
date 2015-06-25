@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/playdate_official_bg"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
+        android:text="Before we begin the fun, here&apos;s \nthe technical privacy stuff"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+
+    <ImageView
+        android:id="@+id/conditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/we_guarantee" 
+        />
+    
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+         android:layout_marginLeft="20dp"
+         android:background="@drawable/cancel_button"
+         android:layout_alignParentLeft="true"
+         />
+
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/accept_button"
+         android:layout_marginRight="18dp"
+         
+        />
+     <TextView
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+         android:layout_above="@+id/cancel"
+        android:layout_margin="25dp"
+        android:text="That's they important stuff...\nto see the long long long version that covers all your rights visit our website  Terms And Conditions And Privacy Policy"
+        />
+     
+     
+     <RelativeLayout android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/mainlayout">
+         
+     </RelativeLayout>
+
+</RelativeLayout>

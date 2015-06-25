@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/parent_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/imagelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" >
+
+            <RelativeLayout
+                android:id="@+id/imagelayout_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.iapptechnologies.time.util.Rounded_image_view
+                    android:id="@+id/imageView_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="1dp"
+                   
+                    />
+
+                <EditText
+                    android:id="@+id/parent_parentname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Name"
+                    android:inputType="textCapCharacters"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/listView_parent_profile_child"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/imagelayout_main"
+                android:background="#ffffff" >
+            </ListView>
+            
+            <Button 
+                android:visibility="gone"
+                 android:id="@+id/add_child"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="35dp"
+                android:background="@drawable/add_child_new"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/imagelayout_main"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/feedback_strip" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="DATE OF BIRTH"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <EditText
+                    android:id="@+id/textView_dob_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView3"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent"
+                    android:hint="DATE"
+                    android:inputType="textCapCharacters"
+                    android:textColor="#a1a1a1"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" >
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/feedback_strip" >
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="LOCATION"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <EditText
+                    android:id="@+id/textView_location_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView32"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent"
+                    android:hint="LOC."
+                    android:inputType="textCapCharacters"
+                    android:textColor="#a1a1a1"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <!--
+          <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/feedback_strip" >
+
+                <RelativeLayout
+                    android:id="@+id/abcd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" >
+
+                    <TextView
+                        android:id="@+id/textView3212"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="SET FIXED \nFREE TIME"
+                        android:textColor="#0097dc"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <EditText
+                        android:id="@+id/textView_freetime_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView3212"
+                        android:background="@android:color/transparent"
+                        android:hint="FREE TIME"
+                        android:inputType="textCapCharacters"
+                        android:textColor="#a1a1a1"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </RelativeLayout>
+
+                
+          <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/abcd"
+          >
+            
+
+            </RelativeLayout>
+               
+
+                <Button
+                    android:id="@+id/button1_add_moredays_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/add_button" />
+            </RelativeLayout>
+            -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/feedback_strip" >
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="PHONE NO."
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <EditText
+                    android:id="@+id/textView_parent_phone_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView31"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent"
+                    android:hint="NO."
+                    android:inputType="phone"
+                    android:textColor="#a1a1a1"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/feedback_strip" >
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="RELATIONSHIP"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <EditText
+                    android:id="@+id/textView_user_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView33"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent"
+                    android:hint="RELATION"
+                    android:inputType="textCapCharacters"
+                    android:textColor="#a1a1a1"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_save_parentupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:background="@drawable/save_button1"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

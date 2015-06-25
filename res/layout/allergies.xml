@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_allergies"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/button_submit_allergies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_allergies" >
+
+        <Button
+            android:id="@+id/button1_allergies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/transparent_add_btn" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/None"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="NONE"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_1_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Banana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/Banana1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="BANANA"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/CeliacGluten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/CeliacGluten1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="CELIAC GLUTEN"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Corn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/Corn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="CORN"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/DairyAnaphylaxis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/DairyAnaphylaxis1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="DAIRY ANAPHY LAXIS"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/egg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/egg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="EGG"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/GelatinMeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/GelatinMeat1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="GELATIN MEAT"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Grass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/Grass1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="GRASS"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/HayfeaverInsect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/HayfeaverInsect1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="HAY FEVER INSECTS"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Insect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/Insect1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="INSECTS"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Nutmilk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/nutmilk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="NUTMILK"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Seeds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/Seeds1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="SEEDS"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/SoyFish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/SoyFish1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="SOYFISH"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Spices"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/Spices1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="SPICES"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/StingsLactose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/StingsLactose1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="STINGS LACTOSE"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/wheat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/wheat1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="WHEAT"
+                        android:textColor="#0097dc"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/edit_allergies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/editText_allergies_xml"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/txt_field"
+                        android:hint="Other"
+                        android:layout_marginRight="15dp"
+                        android:padding="15dp"
+                        android:textColor="#0097dc" >
+                    </EditText>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/container_dropshadow" >
+
+    <com.iapptechnologies.time.util.Rounded_image_view
+        android:id="@+id/imageView1_addsets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/place_holder" />
+
+    
+
+   <!--  <CheckBox
+        android:id="@+id/checkBox_addsets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="1dp"
+        android:textColor="@android:color/white"
+         />
+ -->
+    <TextView
+        android:id="@+id/textView_list_addsets_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/imageView1_addsets"
+        android:text="TextView"
+        android:textColor="#0097dc"
+        android:textSize="13dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_addsets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignBaseline="@+id/textView_list_addsets_name"
+        android:layout_alignBottom="@+id/textView_list_addsets_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="" />
+
+</RelativeLayout>

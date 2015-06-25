@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/home_fragment_layout"
+    android:orientation="vertical" >
+    
+    
+
+ <Button
+    android:visibility="gone"
+     android:id="@+id/startarrange"
+     android:background="@drawable/arrange_playdate_button"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     android:layout_marginBottom="100dp"/>
+ 
+ <Button
+    android:visibility="gone"
+     android:id="@+id/addchild"
+     android:layout_width="wrap_content"
+     android:background="@drawable/add_child_profile"
+     android:layout_centerHorizontal="true"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/startarrange"
+     android:layout_marginBottom="20dp"/>
+ 
+
+    <ListView 
+       
+         android:background="#e3e3e3"
+        android:id="@+id/listView1_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+    </ListView>
+
+</RelativeLayout>

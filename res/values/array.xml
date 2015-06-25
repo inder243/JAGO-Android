@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list1">
+         <item >--Select Guardian Type--</item>
+        <item >Father</item>
+        <item >Mother</item>
+        <item >Uncle</item>
+    </string-array>
+    <string-array name="name_of_week">
+     <item >Monday</item>
+        <item >Tuesday</item>
+        <item >Wednesday</item>
+         <item >Thursday</item>
+        <item >Friday</item>
+        <item >Saturday</item>
+        <item >Sunday</item>
+     </string-array>
+    
+</resources>

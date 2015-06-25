@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3"
+    android:orientation="vertical" >
+
+   <!--  <LinearLayout
+        android:id="@+id/tabBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_back"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/btn_transparent" />
+    </LinearLayout>
+ -->
+    <RelativeLayout
+        android:id="@+id/child_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/imagelayout_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp" >
+
+                <com.iapptechnologies.time.util.Rounded_image_view
+                    android:id="@+id/imageView_child_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="25dp"
+                   
+                   
+                    />
+                <!-- style="@style/myImageView" -->
+
+                <EditText
+                    android:id="@+id/child_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView_child_profile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Name"
+                    android:inputType="textCapCharacters"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/listView_child_profile_child"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/imagelayout_main"
+                android:background="@android:color/white" >
+            </ListView>
+            <Button 
+                android:id="@+id/unlink_child"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listView_child_profile_child"
+               android:layout_marginRight="15dp"
+                android:background="@drawable/unlink_child"
+                android:layout_marginLeft="15dp"
+                 android:layout_toRightOf="@+id/imagelayout_main"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/feedback_strip" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="5dp"
+                        android:text="DATE OF BIRTH"
+                        android:textColor="#0097dc"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <EditText
+                        android:id="@+id/textView_dob_child_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView3"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@android:color/transparent"
+                        android:hint="DATE"
+                        android:inputType="textCapCharacters"
+                        android:textColor="#a1a1a1"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+
+                        <requestFocus />
+                    </EditText>
+                </RelativeLayout>
+
+                <!--
+              <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/feedback_strip" >
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:text="CONDITION"
+                android:textColor="#0097dc"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+           <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView30" >
+
+                <EditText
+                    android:id="@+id/textView_condition_childprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent"
+                    android:hint="CON."
+                    android:inputType="textCapCharacters"
+                    android:scrollHorizontally="true"
+                    android:textColor="#a1a1a1"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </RelativeLayout>
+             </RelativeLayout>
+                -->
+
+            <!--     <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/feedback_strip" >
+                    <Button
+                        android:id="@+id/button1_add_moredays_child_profile"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/add_button" />
+
+                    <RelativeLayout
+                        android:id="@+id/abcd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/button1_add_moredays_child_profile"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true" >
+
+                        <TextView
+                            android:id="@+id/textView3212"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerHorizontal="true"
+                            android:paddingLeft="5dp"
+                            android:text="SET FREE TIME"
+                            android:textColor="#0097dc"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+
+                        <EditText
+                            android:id="@+id/textView_freetime_child_profile"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                       
+                            android:layout_toRightOf="@+id/textView3212"
+                            android:background="@android:color/transparent"
+                            android:hint="FREE TIME"
+                             android:inputType="textMultiLine|textCapCharacters" 
+                            android:textColor="#a1a1a1"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:typeface="sans" 
+                            android:layout_marginLeft="10dp"
+                         
+                            />
+                    </RelativeLayout>
+
+                    
+                </RelativeLayout>
+ -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/feedback_strip" >
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="5dp"
+                        android:text="ALLERGIES"
+                        android:textColor="#0097dc"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView31" >
+
+                        <EditText
+                            android:id="@+id/textView_child_profile_allergies"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:background="@android:color/transparent"
+                            android:hint="ALLE."
+                            android:inputType="textMultiLine|textCapCharacters" 
+                            android:textColor="#a1a1a1"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+               <!--  <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/feedback_strip" >
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="5dp"
+                        android:text="HOBBIES"
+                        android:textColor="#0097dc"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView32" >
+
+                        <EditText
+                            android:id="@+id/textView_child_profile_hobbies"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:background="@android:color/transparent"
+                            android:hint="HOB."
+                            android:inputType="textMultiLine|textCapCharacters" 
+                            android:textColor="#a1a1a1"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+                    </RelativeLayout>
+                </RelativeLayout>
+ -->
+              <!--   <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/feedback_strip" >
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="5dp"
+                        android:text="SCHOOL"
+                        android:textColor="#0097dc"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView33" >
+
+                        <EditText
+                            android:id="@+id/textView_child_profile_school"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:background="@android:color/transparent"
+                            android:hint="SCH."
+                            android:inputType="textCapCharacters"
+                            android:textColor="#a1a1a1"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+                    </RelativeLayout>
+                </RelativeLayout> -->
+
+                <!-- <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/feedback_strip" >
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="5dp"
+                        android:text="YOUTH CLUB"
+                        android:textColor="#0097dc"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView34" >
+
+                        <EditText
+                            android:id="@+id/textView_child_profile_youthclub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:background="@android:color/transparent"
+                            android:hint="CLUB"
+                            android:inputType="textCapCharacters"
+                            android:textColor="#a1a1a1"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+                    </RelativeLayout>
+                </RelativeLayout> -->
+
+                <Button
+                    android:id="@+id/button_save_child_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/save_button1"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

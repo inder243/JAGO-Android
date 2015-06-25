@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale">
+        <ignore path="src/com/iapptechnologies/time/Event_accept_reject_edit.java" />
+        <ignore path="src/com/iapptechnologies/time/Parent_profile.java" />
+    </issue>
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/com/iapp/playdate/Add_Child.java" />
+        <ignore path="src/com/iapp/playdate/Share_facebook_twitter.java" />
+        <ignore path="src/com/iapptechnologies/time/Friend_profile.java" />
+        <ignore path="src/com/playdates/Add_Child.java" />
+    </issue>
+    <issue id="SimpleDateFormat">
+        <ignore path="src/com/iapptechnologies/time/Add_Child.java" />
+        <ignore path="src/com/iapptechnologies/time/FacebookLogin.java" />
+    </issue>
+    <issue id="ValidFragment">
+        <ignore path="src/com/iapp/playdate/Add_Child.java" />
+    </issue>
+</lint>

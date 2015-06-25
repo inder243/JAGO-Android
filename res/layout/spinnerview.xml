@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     android:background="#e3e3e3" >
+
+    
+
+    <RelativeLayout
+        android:id="@+id/father"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="15dp"
+       
+       >
+
+      
+
+        <TextView
+            android:id="@+id/father1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+           android:textColor="#0097dc" 
+            android:text="Father"
+             android:textSize="22sp"
+          
+            />
+
+        
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mother"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="15dp"
+      
+        >
+
+        <TextView
+            android:id="@+id/mother1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+           android:textColor="#0097dc" 
+            android:text="Mother"
+            android:textSize="22sp"
+     
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/grandfather"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="15dp"
+        
+       >
+
+        <TextView
+            android:id="@+id/grandfather1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+          android:textColor="#0097dc" 
+            android:text="Grandfather"
+           android:textSize="22sp"
+       
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/grandmother"
+      android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="15dp"
+      
+         >
+     
+
+        <TextView
+            android:id="@+id/grandmother1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+        android:textColor="#0097dc" 
+            android:text="Grandmother"
+         android:textSize="22sp"
+        
+            />
+    </RelativeLayout>
+
+   
+
+    
+    
+
+</LinearLayout>

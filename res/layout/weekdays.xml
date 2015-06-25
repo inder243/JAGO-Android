@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/weekdays_selection"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    
+     android:background="#e3e3e3">
+    
+ <RelativeLayout
+        android:id="@+id/Monday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="50dp"
+     
+       >
+
+      
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+           android:textColor="#0097dc" 
+            android:text="MONDAY"
+             android:textSize="22sp"
+          
+            />
+
+    </RelativeLayout>
+     <RelativeLayout
+        android:id="@+id/Tuesday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="5dp"
+       >
+
+      
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+           android:textColor="#0097dc" 
+            android:text="TUESDAY"
+             android:textSize="22sp"
+          
+            />
+
+    </RelativeLayout>
+     <RelativeLayout
+        android:id="@+id/Wednesday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="5dp"
+       >
+
+      
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+           android:textColor="#0097dc" 
+            android:text="WEDNESDAY"
+             android:textSize="22sp"
+          
+            />
+
+    </RelativeLayout>
+     <RelativeLayout
+        android:id="@+id/Thursday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="5dp"
+       >
+
+      
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+           android:textColor="#0097dc" 
+            android:text="THURSDAY"
+             android:textSize="22sp"
+          
+            />
+
+    </RelativeLayout>
+     <RelativeLayout
+        android:id="@+id/Friday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="5dp"
+       >
+
+      
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+           android:textColor="#0097dc" 
+            android:text="FRIDAY"
+             android:textSize="22sp"
+          
+            />
+
+    </RelativeLayout>
+     <RelativeLayout
+        android:id="@+id/Saturday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="5dp"
+       >
+
+      
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+           android:textColor="#0097dc" 
+            android:text="SATURDAY"
+             android:textSize="22sp"
+          
+            />
+
+    </RelativeLayout>
+     <RelativeLayout
+        android:id="@+id/Sunday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="5dp"
+       >
+
+      
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+           android:textColor="#0097dc" 
+            android:text="SUNDAY"
+             android:textSize="22sp"
+          
+            />
+
+    </RelativeLayout>
+</LinearLayout>

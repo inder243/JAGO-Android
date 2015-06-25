@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3" 
+    style="@android:style/Theme.Light.NoTitleBar">
+
+    <RelativeLayout
+        android:id="@+id/linear_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/feedback_strip" >
+
+        <TextView
+            android:id="@+id/textView_freiends_sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="FRIENDS"
+             android:textSize="12dp"  />
+
+        <Button
+            android:id="@+id/button_view_sets"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/view_button" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/textView_members_sets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:text=""
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_members_sets"
+                android:text="MEMBERS"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <!--
+        <TextView
+            android:id="@+id/textView_members_sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" 
+            android:textSize="13dp"
+           android:layout_alignParentRight="true"
+             android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+           android:layout_marginRight="5dp"
+           />
+            
+                 <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEMBERS"
+             android:textSize="13dp"
+        android:layout_below="@+id/textView_members_sets"
+         android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+        />
+        -->
+
+    </RelativeLayout>
+
+    <!--
+         <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_margin="5dp"
+        android:id="@+id/linear_top"
+        android:background="@drawable/feedback_strip">
+
+        <TextView
+            android:id="@+id/textView_freiends_sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FRIENDS" 
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/button_view_sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_button"
+            android:layout_weight="1"
+          android:gravity="center_horizontal"
+           
+          />
+        
+         <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+         android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/textView_members_sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" 
+            android:textSize="13dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEMBERS"
+             android:textSize="13dp"
+            android:layout_gravity="center_horizontal" />
+        
+    </LinearLayout>
+     </LinearLayout>
+    -->
+
+    <ListView
+        android:id="@+id/listView_sets_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_add_sets"
+        android:layout_below="@+id/linear_top" >
+    </ListView>
+
+    <Button
+        android:id="@+id/button_add_sets"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+         android:layout_marginTop="10dp"
+        android:background="@drawable/new_set_button" />
+
+</RelativeLayout>

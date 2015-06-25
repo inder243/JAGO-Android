@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+       android:background="#e3e3e3" >
+       
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+       android:text="REGISTRATION"
+       android:textColor="@android:color/white"
+       android:typeface="sans"
+       android:textSize="18dp"
+       
+       android:gravity="center_vertical|center_horizontal" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/register_text_field_bg"
+        >
+
+        <EditText
+            android:id="@+id/edit_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+         android:background="@drawable/txt_field"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+              android:singleLine="true"
+            android:lines="1"
+            android:paddingLeft="15dp"
+          
+              android:textColor="#0097dc"  />
+
+    <EditText
+        android:id="@+id/edit_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+       android:paddingLeft="15dp"
+      android:hint="Last Name"
+       android:singleLine="true"
+             android:lines="1"
+       android:background="@drawable/txt_field"
+         android:textColor="#0097dc" />
+ <!-- <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+         android:layout_marginTop="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:gravity="left"
+         android:background="@drawable/txt_field"
+        android:layout_height="40dp"
+         /> -->
+    <EditText
+        android:id="@+id/textView1_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_field"
+     android:layout_marginTop="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+       android:paddingLeft="15dp"
+       android:textColor="#0097dc"
+       android:hint="--Select guardian type--"
+       />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+       android:paddingLeft="15dp"
+        android:singleLine="true"
+             android:lines="1"
+    android:background="@drawable/txt_field"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+          android:textColor="#0097dc"  />
+    
+    
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+         android:layout_marginTop="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+       android:background="@drawable/txt_field"
+        android:layout_height="wrap_content"
+      android:hint="Password"
+       android:paddingLeft="15dp"
+        android:singleLine="true"
+             android:lines="1"
+        android:inputType="textPassword"
+          android:textColor="#0097dc"  />
+
+    <EditText
+        android:id="@+id/edit_confirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:layout_marginBottom="30dp"
+       android:paddingLeft="15dp"
+      android:hint="Confirm Password"
+       android:singleLine="true"
+             android:lines="1"
+      android:background="@drawable/txt_field"
+        android:inputType="textPassword" 
+          android:textColor="#0097dc" />
+
+   
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_user_registration"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register_btn"
+        android:layout_margin="20dp"
+        />
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/raincoat_children_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linear_requestdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+           
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+               android:layout_marginTop="15dp"
+                android:layout_weight="7"
+                android:background="@drawable/container_dropshadow"
+                android:orientation="vertical" >
+                
+                 <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Send a Playdate Request in a Flash!"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <com.iapptechnologies.time.util.Rounded_image_view
+                        android:id="@+id/imageView_child_arrange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/place_holder" />
+
+                    <TextView
+                        android:id="@+id/txt_child_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/add_more_child"
+                        android:layout_toRightOf="@+id/imageView_child_arrange"
+                        android:background="@drawable/txt_field"
+                        android:padding="10dp"
+                        android:text="CHILD NAME"
+                        android:textColor="#0097dc"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/add_more_child"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/add_button" />
+                    
+                    
+                    <Button 
+                        android:visibility="gone"
+                        android:id="@+id/addchild_view"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/add_child_new"
+                        android:layout_height="35dp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <com.iapptechnologies.time.util.Rounded_image_view
+                        android:id="@+id/imageView_child_friend_arrange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/place_holder" />
+
+                    <TextView
+                        android:id="@+id/txt_friend_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/add_more_friend"
+                        android:layout_toRightOf="@+id/imageView_child_friend_arrange"
+                        android:background="@drawable/txt_field"
+                        android:padding="10dp"
+                        android:text="FRIEND'S NAME"
+                        android:textColor="#0097dc"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/add_more_friend"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/add_button" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/edit_requestdate_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/txt_field"
+                    android:hint="DATE"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_starttime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/txt_field"
+                    android:hint="START TIME"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_endtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/txt_field"
+                    android:hint="END TIME"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp" />
+<!-- 
+                <EditText
+                    android:id="@+id/edit_requestdate_date1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE DATE 1"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_starttime1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE START TIME 1"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_endtime1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE END TIME 1"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_date2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE DATE 2"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_starttime2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE START TIME 2"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_endtime2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE END TIME 2"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_date3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE DATE 3"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_starttime3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE START TIME 3"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_endtime3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE END TIME 3"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" /> -->
+
+               <!--  <TextView
+                    android:id="@+id/text_alternatedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="+ Alternate Date/Time"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp" />
+ -->
+                <EditText
+                    android:id="@+id/edit_requestdate_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/txt_field"
+                    android:hint="LOCATION"
+                    android:inputType="textCapCharacters"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/txt_field"
+                    android:hint="NOTES"
+                    android:inputType="textCapCharacters"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/button1_requestdate_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/send_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linear_requestdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="7"
+               
+                android:background="@drawable/container_dropshadow"
+                android:orientation="vertical" >
+
+                
+             <EditText
+            android:id="@+id/edit_requestdate_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:background="@drawable/txt_field"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+             android:lines="1"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+              android:textColor="#0097dc" 
+              android:hint="Child" />
+               
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageView_child_arrange"
+                        android:layout_width="wrap_content"
+                         android:layout_marginTop="25dp"
+                           android:layout_marginLeft="20dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/placeholder_small" />
+
+                <Spinner
+                    android:id="@+id/spinner_requestdate_childname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/list_dropdown"
+                    android:paddingLeft="15dp" />
+                 </LinearLayout>
+  <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageView_child_friend_arrange"
+                        android:layout_width="wrap_content"
+                         android:layout_marginTop="25dp"
+                           android:layout_marginLeft="20dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/placeholder_small" />
+                
+                <Spinner
+                    android:id="@+id/spinner_requestdate_childfriend"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/list_dropdown"
+                    android:paddingLeft="15dp" />
+  </LinearLayout>
+                
+         <EditText
+       
+       
+         android:prompt="@string/childname"
+          android:prompt="@string/childfriendname"
+            android:id="@+id/edit_requestdate_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" 
+            android:background="@drawable/txt_field"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+             android:lines="1"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+              android:textColor="#0097dc"
+              android:hint="Friend" />
+               
+
+                <EditText
+                    android:id="@+id/edit_requestdate_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                   
+                    android:background="@drawable/txt_field"
+                    android:hint="DATE"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_starttime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    
+                    android:background="@drawable/txt_field"
+                    android:hint="START TIME"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_endtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                   
+                    android:background="@drawable/txt_field"
+                    android:hint="END TIME"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_date1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                   
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE DATE 1"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_starttime1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                   
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE START TIME 1"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_endtime1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                   
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE END TIME 1"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_date2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                   
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE DATE 2"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_starttime2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                 
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE START TIME 2"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_endtime2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                   
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE END TIME 2"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_date3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                  
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE DATE 3"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_starttime3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                   
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE START TIME 3"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_endtime3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                  
+                    android:background="@drawable/txt_field"
+                    android:hint="ALTERNATE END TIME 3"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/text_alternatedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="+ Alternate Date/Time"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                   
+                    android:background="@drawable/txt_field"
+                    android:hint="LOCATION"
+                    android:inputType="textCapCharacters"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/edit_requestdate_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                   
+                    android:background="@drawable/txt_field"
+                    android:hint="NOTES"
+                    android:inputType="textCapCharacters"
+                    android:lines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="#0097dc"
+                    android:textSize="13dp" />
+            
+
+            <Button
+                android:id="@+id/button1_requestdate_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/send_button" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button2_requestdate_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/save_button" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout> -->
+</LinearLayout>
